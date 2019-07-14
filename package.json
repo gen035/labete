@@ -1,0 +1,26 @@
+{
+  "name": "labete",
+  "version": "1.0.0",
+  "description": "My stellar Nuxt.js project",
+  "author": "Genevieve Perron-Migneron",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.0.0",
+    "nuxt-i18n": "^5.12.7",
+    "prismic-nuxt": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "vue2-gmap-custom-marker": "^5.5.4",
+    "vue2-google-maps": "^0.10.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

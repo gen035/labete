@@ -1,0 +1,37 @@
+.store
+  position: relative
+  padding: 15px
+  transition: all 125ms linear
+
+.store::after
+  position: absolute
+  bottom: 0
+  content: ""
+  width: 90%
+  height: 1px 
+  background-color: $dark-grey
+  transition: background-color 125ms linear
+    
+.store:hover::after
+  background-color: $gold
+
+.store i
+  position: absolute
+  font-size: 64px
+  color: grey 
+  opacity: 0
+  transition: opacity 250ms linear
+
+.store:hover i
+  opacity: 0.3
+
+.store-name
+  font-weight: bold
+
+.store-address
+  margin: 15px 0
+
+#map
+  height: 20vh
+  @media (min-width: 768px)
+    height: 60vh

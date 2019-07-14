@@ -1,0 +1,47 @@
+.event
+  display: block
+  border: 1px solid $gold
+  margin-bottom: 32px
+  transition: opacity 250ms ease-in
+  @media (min-width: 992px)
+    display: flex
+
+.event:hover
+  opacity: 0.8
+
+.event-content
+  width: 100%
+  @media (min-width: 992px)
+    min-height: 300px
+    width: 40%
+
+.event-content > div
+  width: 100%
+  padding: 15px
+
+.event-image
+  width: 100%
+  min-height: 200px
+  background-size: cover
+  background-position: center
+  @media (min-width: 992px)
+    width: 60%
+
+.event-image a
+  height: 100%
+  width: 100%
+  display: block
+
+.event-name
+  font-size: 18px
+  margin-bottom: 24px
+
+.event-links
+  display: flex
+  padding: 32px 0 0 0
+
+.event-links i
+  color: $gold
+
+.event-link
+  width: 50%
