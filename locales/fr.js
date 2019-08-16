@@ -140,5 +140,9 @@ export default {
     phone: 'Téléphone',
     email: 'Courriel',
     alt: 'bijoux, cuir, fait a la main'
+  },
+  newsletter: {
+    title: 'S\'abonner à l\'infolettre',
+    placeholder: 'Courriel'
   }
 }

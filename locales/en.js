@@ -140,5 +140,9 @@ export default {
     phone: 'Phone',
     email: 'Email',
     alt: 'jewelry, leather, hand made'
+  },
+  newsletter: {
+    title: 'Subscribe to our newsletter',
+    placeholder: 'Email'
   }
 }
