@@ -126,6 +126,14 @@ export default {
     {
       year: '2019',
       events: [
+        'Festival Western de St-Tite',
+        'Festival des artisans de Sainte-Marcelline-de-Kildare',
+        'Braderie de Gatineau',
+        'Popup boutique Place Rosemère',
+        'Salon des métiers d\'art de Sorel-Tracy',
+        'Signature show Ottawa',
+        'Popup boutique Place Rosemère',
+        'Salon des Métiers D\'art du Québec',
         'BY HAND CANADA’S ARTISAN GIFT SHOW',
         'Défilé les Décousus - 4ième édition',
         'La grande braderie de mode Québécoise'

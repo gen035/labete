@@ -94,7 +94,7 @@
         this.passed.push(item);
       });
 
-      this.getDynamicPassedEvents();
+      //this.getDynamicPassedEvents();
     },
     methods: {
       getDynamicPassedEvents() {
@@ -106,7 +106,7 @@
               const currentYear = parseInt(list.year)
 
               if (currentYear === eventYear) {
-                this.passed[index].events.push(event.name[0].text)
+                this.passed[index].events.unshift(event.name[0].text)
               }
             });
           }

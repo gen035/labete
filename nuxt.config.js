@@ -63,6 +63,9 @@ export default {
       defaultLocale: 'fr',
       lazy: true
     }],
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-34334834-1'
+    }],
     '@nuxtjs/axios'
   ],
   /*
