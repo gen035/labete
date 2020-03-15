@@ -43,7 +43,7 @@
 
       await app.$prismic.api.query(
         app.$prismic.predicates.at('document.type', 'eventpage'), {
-           lang: `${locale}-ca`
+          lang: `${locale}-ca`
         }
       ).then((response) => {
          response.results.forEach(result => {
@@ -53,7 +53,8 @@
 
       await app.$prismic.api.query(
         app.$prismic.predicates.at('document.type', 'events'), {
-           lang: `${locale}-ca`
+           lang: `${locale}-ca`,
+           orderings : '[my.events.start_date]',
         }
       ).then((response) => {
         response.results.forEach(result => {
