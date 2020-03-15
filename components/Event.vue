@@ -15,6 +15,8 @@
     <div class="event-content vam">
       <div>
         <div class="event-name">{{ event.name[0].text }}</div>
+        <div class="event-city">{{ event.city[0].text }}</div>
+        <div class="event-venue">{{ event.venue[0].text }}</div>
         <div class="event-desc" v-html="$prismic.asHtml(event.description)"/>
         <div class="event-links">
           <div v-if="event.google_maps_link.url" class="event-link">
