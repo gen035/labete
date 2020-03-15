@@ -1,13 +1,13 @@
 <template>
   <div id="newsletter">
-    <div class="newsletter-title">{{ $t('newsletter.title') }} {{ email }}</div>
+    <div class="newsletter-title">{{ $t('newsletter.title') }}</div>
     <form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8" target="_blank" onsubmit="submitFooterForm()">
       <fieldset>
         <legend></legend>
           <div class="newsletter-wrapper">
             <label for="ci_email" class="sr-only">Email</label>
-            <input type="text" id="ci_email" name="ci_email" class="ci_email_footer" :placeholder="$t('newsletter.placeholder')" maxlength="255" :model="email"/>
-            <button type="submit" value="Send" id="ci_submit" class="is-disabled"><i class="fa fa-arrow-right"></i></button>
+            <input type="text" id="ci_email" name="ci_email" class="ci_email_footer" :placeholder="$t('newsletter.placeholder')" maxlength="255" v-model="email" />
+            <button type="submit" value="Send" id="ci_submit" :class="{isDisabled : disabled}"><i class="fa fa-arrow-right"></i></button>
         </div>
         <div style="display:block; visibility:hidden; height:1px;">
         <input style="display:none;" type="text" id="ci_verification" name="ci_verification" />
@@ -31,13 +31,16 @@
     },
     data() {
       return {
+        disabled: true,
         email: ''
       };
     },
-    methods: {
-      validate() {
-        console.log(event)
-        //this.email = event.value;
+    watch: {
+      email: {
+        handler: function(newValue, oldValue) {
+          const exp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          this.disabled = !exp.test(newValue);
+        }
       }
     }
   }
