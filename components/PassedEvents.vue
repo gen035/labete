@@ -1,5 +1,6 @@
 <template>
   <li
+    v-if="events.length > 0"
     :class="`menu`"
     @click="toggle"
   >
