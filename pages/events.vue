@@ -94,23 +94,27 @@
         this.passed.push(item);
       });
 
-      //this.getDynamicPassedEvents();
+      this.getDynamicPassedEvents();
     },
     methods: {
       getDynamicPassedEvents() {
+        const passed = JSON.parse(JSON.stringify( this.passed ));
+
         this.events.map((event) => {
           if (this.today > this.$prismic.asDate(event.end_date)) {
             const eventYear = this.$prismic.asDate(event.end_date).getFullYear();
 
-            this.passed.map((list, index) => {
+            passed.map((list, index) => {
               const currentYear = parseInt(list.year)
 
               if (currentYear === eventYear) {
-                this.passed[index].events.unshift(event.name[0].text)
+                passed[index].events.unshift(event.name[0].text)
               }
             });
           }
         });
+
+        this.passed = passed;
       }
     },
     components: {

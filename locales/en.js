@@ -138,6 +138,10 @@ export default {
         'Défilé les Décousus - 4ième édition',
         'La grande braderie de mode Québécoise'
       ]
+    },
+    {
+      year: '2020',
+      events: [],
     }
   ],
   event: {
