@@ -52,7 +52,7 @@
               </li>
           </ul>
         </div>
-        <div class="col-4 nav-mobile-trigger" @click="openMobileNav">
+        <div class="col-4 nav-mobile-trigger" @click="toggleMobileNav">
           <span>Menu<i class="fa fa-chevron-down"></i></span>
         </div>
       </div>
@@ -81,7 +81,7 @@
       }
     },
     methods: {
-      openMobileNav() {
+      toggleMobileNav() {
         const { body } = document;
         body.classList.toggle('is-nav-opened');
       },
