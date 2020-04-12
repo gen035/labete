@@ -1,6 +1,12 @@
 <template>
-  <section class="content">
+  <section class="content artist">
       <section class="container">
+        <div class="row">
+          <div
+            v-html="$prismic.asHtml(content.title)"
+            class="col-md-12"
+          />
+        </div>
         <div class="row">
             <div
               v-html="$prismic.asHtml(content.content)"
