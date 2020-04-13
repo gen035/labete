@@ -1,12 +1,14 @@
 <template>
   <div>
     <section class="home-slider container-fluid">
-      <div class="row">
-        <div class="col-8">
-          <Slider :data="slider" />
-        </div>
-        <div class="col-4">
-          <div class="home-title">{{ content.hero_title[0].text }}</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <Slider :data="slider" />
+          </div>
+          <div class="col-4">
+            <div class="home-title">{{ content.hero_title[0].text }}</div>
+          </div>
         </div>
       </div>
     </section>
