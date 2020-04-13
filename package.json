@@ -18,6 +18,7 @@
     "nuxt-i18n": "^5.12.7",
     "prismic-nuxt": "^0.5.1",
     "sass-loader": "^7.1.0",
+    "vue-slick": "^1.1.15",
     "vue2-gmap-custom-marker": "^5.5.4",
     "vue2-google-maps": "^0.10.6"
   },
