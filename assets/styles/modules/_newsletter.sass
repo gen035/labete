@@ -1,6 +1,6 @@
 .newsletter-title
-  margin: 10px 0
   color: $white
+  margin: 10px 0
 
 .newsletter-form-wrapper
   position: relative
@@ -11,40 +11,40 @@
 
 
 .footer-newsletter
-  input[type="text"]
-    border: 0
-    width: 300px
-    height: 50px
-    padding: 5px
-    background-color: $light-grey
-    color: $white
-    border-radius: 3px
+  input[type='text']
     -moz-appearance: none
     -webkit-appearance: none
+    background-color: $light-grey
+    border: 0
+    border-radius: 3px
+    color: $white
+    height: 50px
+    padding: 5px
+    width: 300px
     &::placeholder
       color: $dark-grey
       font-size: 14px
 
   button
+    -webkit-appearance: none
+    -webkit-appearance: none
+    background-color: $gold
     border: 0
-    width: 50px
+    border-bottom-right-radius: 3px
+    border-top-right-radius: 3px
+    color: $white
+    cursor: pointer
     height: 50px
     margin: 0
-    background-color: $gold
-    color: $white
     position: absolute
     right: 0
     top: 0
-    border-top-right-radius: 3px
-    border-bottom-right-radius: 3px
     transition: color .25s linear
-    cursor: pointer
-    -webkit-appearance: none
-    -webkit-appearance: none
+    width: 50px
 
-  button.isDisabled
+  &.isDisabled
     background-color: $dark-grey
-    opacity: 0.5
+    opacity: .5
     pointer-events: none
 
 .modal-content
@@ -56,15 +56,15 @@
 
   #newsletter
     display: block
-    width: 100%
     margin: 0 auto
     text-align: left
+    width: 100%
 
   .newsletter-title
-    font-weight: bold
-    font-size: 24px
-    margin: 10px 0
     color: $dark-grey
+    font-size: 24px
+    font-weight: bold
+    margin: 10px 0
     text-align: center
     @media (min-width: 768px)
       font-size: 32px
@@ -80,33 +80,34 @@
     display: block
     font-size: 10px
 
-  .newsletter-form-wrapper input[type="text"]
+  .newsletter-form-wrapper input[type='text']
+    background-color: $white
     border: 0
     border: 1px solid $gold
-    width: 100%
+    color: $dark-grey
     height: 50px
     padding: 5px
-    background-color: $white
-    color: $dark-grey
-    @media (min-width: 768px)
-      width: 300px
-      max-width: 100%
-
-  .newsletter-form-wrapper input[type="submit"]
-    display: block
     width: 100%
-    border: 1px solid $gold
-    margin: 10px 0
+    
+    @media (min-width: 768px)
+      max-width: 100%
+      width: 300px
+
+  .newsletter-form-wrapper input[type='submit']
     background-color: $gold
+    border: 1px solid $gold
+    border-radius: 3px
     color: $white
+    cursor: pointer
+    display: block
+    margin: 10px 0
     position: relative
     transition: color .25s linear
-    cursor: pointer
-    border-radius: 3px
+    width: 100%
     @media (min-width: 768px)
       width: auto
 
-  .newsletter-form-wrapper input[type="submit"].isDisabled
+  .newsletter-form-wrapper input[type='submit'].isDisabled
     background-color: $dark-grey
-    opacity: 0.5
+    opacity: .5
     pointer-events: none

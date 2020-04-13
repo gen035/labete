@@ -12,7 +12,7 @@
         target="_blank"
       />
     </div>
-    <div class="event-content vam">
+    <div class="event-content d-flex align-items-center">
       <div>
         <div class="event-name">{{ event.name[0].text }}</div>
         <div class="event-city">{{ event.city[0].text }}</div>
@@ -74,7 +74,7 @@
     computed: {
       isOdd() {
         if (this.index % 2 === 1) {
-          return 'reverse';
+          return 'flex-row-reverse';
         }
         return '';
       },

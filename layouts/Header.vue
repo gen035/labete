@@ -27,7 +27,7 @@
       </ul>
     </div>
     <header class="header container">
-      <div class="row vam">
+      <div class="row align-items-center">
         <div class="col-8 col-sm-12 col-md-4 header-logo-wrapper">
           <a href="/" title="La Bete" data-track="" data-track-category="nav" data-track-action="click" data-track-label="Logo">
             <Media

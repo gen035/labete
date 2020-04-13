@@ -5,17 +5,17 @@
 
 .nav li
   display: inline-block
-  position: relative
   margin: 0 10px
+  position: relative
 
 .nav li a.active::after
-  position: absolute
-  content: ""
-  left: 0
-  bottom: -4px
-  width: 100%
-  height: 2px
   background-color: $gold
+  bottom: -4px
+  content: ''
+  height: 2px
+  left: 0
+  position: absolute
+  width: 100%
 
 .nav-mobile-trigger
   cursor: pointer
@@ -23,13 +23,18 @@
   @media (min-width: 576px)
     display: none
 
-.nav-mobile-trigger span
-  text-transform: uppercase
+.nav-mobile-trigger
+  span
+    text-transform: uppercase
   
-.nav-mobile-trigger span i
-  color: $gold
-  margin-left: 16px
-  transition: all 250ms linear
+.nav-mobile-trigger
+  span
+    i
+      color: $gold
+      margin-left: 16px
+      transition: all 250ms linear
 
-.is-nav-opened span i
-  transform: rotate(180deg)
+.is-nav-opened
+  span
+    i
+      transform: rotate(180deg)

@@ -7,7 +7,7 @@
               class="col-md-12"
             />
         </div>
-        <div class="row vam justify-content-center">
+        <div class="row align-items-center justify-content-center">
           <div class="col-md-4">
             <div class="contact-item">
               <a :href="`tel:+${formattedPhone}`" title="Telephone" data-track="" data-track-category="contact" data-track-action="click" data-track-label="telephone">
