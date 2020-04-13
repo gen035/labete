@@ -1,10 +1,6 @@
 <template>
   <section class="content">
     <section class="home-video-container">
-      <video playsinline autoplay muted loop>
-        <source :src="content.video.url" type="video/mp4">
-        <source src="user/pages/01.home/video.ogg" type="video/ogg">
-      </video>
     </section>
     <section class="home-banner">
       <div class="container">
