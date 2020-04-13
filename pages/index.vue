@@ -1,10 +1,13 @@
 <template>
-  <section class="content">
-    <section class="home-video-container">
-    </section>
-    <section class="home-banner">
-      <div class="container">
-        {{ content.hero_title[0].text }}
+  <div>
+    <section class="home-slider container-fluid">
+      <div class="row">
+        <div class="col-8">
+          <Slider :data="slider" />
+        </div>
+        <div class="col-4">
+          <div class="home-title">{{ content.hero_title[0].text }}</div>
+        </div>
       </div>
     </section>
     <section
@@ -89,12 +92,13 @@
         </div>
       </div>
     </section>
-  </section>
+  </div>
 </template>
 
 <script>
   import Media from '~/components/Media';
   import Card from '~/components/Card';
+  import Slider from '~/components/Slider';
   import HomePageBlock from '~/components/HomePageBlock';
 
   export default {
@@ -127,12 +131,17 @@
         blocks.push(item.data);
       }
 
+      let slider = {};
+      const sliderData = await app.$prismic.api.getByID(content.slider.id);
+      slider = sliderData.data;
+      console.log(slider)
       if (content) {
         return {
           content,
           seo,
           blocks,
-          cards
+          cards,
+          slider
         }
       } else {
         error({ statusCode: 404, message: 'Page not found' })
@@ -152,7 +161,8 @@
     components: {
       Card,
       HomePageBlock,
-      Media
+      Media,
+      Slider
     },
     nuxtI18n: {
       paths: {
