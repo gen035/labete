@@ -30,7 +30,6 @@
     },
     methods: {
       toggleMobileNav() {
-        console.log('ddd')
         const { body } = document;
         body.classList.toggle('is-nav-opened');
       }

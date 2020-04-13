@@ -145,7 +145,7 @@
       let slider = {};
       const sliderData = await app.$prismic.api.getByID(content.slider.id);
       slider = sliderData.data;
-      console.log(slider)
+
       if (content) {
         return {
           content,
