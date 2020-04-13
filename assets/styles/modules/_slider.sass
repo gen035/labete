@@ -87,15 +87,14 @@
   margin-bottom: 30px
 
 .slick-dots
-  bottom: 20px
   display: block
   list-style: none
   margin: 0
   padding: 0
-  position: absolute
   text-align: center
   width: 100%
-
+  @media (min-width: 768px)
+    display: none
   li
     cursor: pointer
     display: inline-block
@@ -130,7 +129,7 @@
         color: $medium-grey
         content: '◆'
         font-family: 'slick'
-        font-size: 36px
+        font-size: 24px
         height: 20px
         left: 0
         line-height: 20px

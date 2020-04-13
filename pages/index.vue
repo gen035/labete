@@ -3,11 +3,20 @@
     <section class="home-slider container-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-md-8 col-sm-12">
             <Slider :data="slider" />
           </div>
-          <div class="col-4">
+          <div class="col-md-4 d-none d-md-block">
             <div class="home-title">{{ content.hero_title[0].text }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container d-md-none">
+      <div class="row">
+        <div class="col-12">
+          <div class="home-title--mobile">
+            {{ content.hero_title[0].text }}
           </div>
         </div>
       </div>

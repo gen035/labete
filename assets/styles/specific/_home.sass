@@ -1,22 +1,30 @@
 .home-slider
-  background-color: #FFF8EC
-  margin-bottom: 45px
+  background-color: $white
   padding: 30px 0
-  
+  @media (min-width: 768px)
+    background-color: #FFF8EC
+    margin-bottom: 45px
+    padding: 30px 0
+
 .home-title
   bottom: 0
   color: $medium-grey
   font-family: 'PT Serif', serif
-  font-size: 16px
-  left: -50px
+  font-size: 63px
+  left: -35px
   padding: 24px 0
   position: absolute
   text-align: left
   width: calc(100% - 30px)
-  @media (min-width: 576px)
-    font-size: 48px
-  @media (min-width: 768px)
+  @media (min-width: 992px)
     font-size: 105px
+
+  &--mobile
+    color: $gold
+    font-family: 'PT Serif', serif
+    font-size: 24px
+    margin: 0 0 12px 0
+    text-align: center
 
 .home-links-container
   padding-bottom: 24px
