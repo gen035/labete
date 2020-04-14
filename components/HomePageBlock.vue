@@ -9,11 +9,7 @@
           <p v-html="$prismic.asHtml(block.description)" />
         </div>
       </div>
-      <div class="col-md-6 home-page-block-img">
-        <Media
-          :image="block.image"
-        />
-      </div>
+      <div class="col-md-6 home-page-block-img" :style="{backgroundImage: `url(${block.image.url})`}" />
     </div>
   </section>
 </template>

@@ -1,15 +1,5 @@
 <template>
-  <VueSlickCarousel
-    :arrows="data.arrows"
-    :autoplay="data.autoplay"
-    :autoplaySpeed="data.autoplay_speed"
-    :dots="data.dots"
-    :fade="data.fade"
-    :infinite="data.infinite"
-    :pauseOnHover="data.pause_on_hover"
-    :slidesToShow="data.slides_to_show"
-    :speed="data.speed"
-  >
+  <VueSlickCarousel v-bind="settings">
     <template v-for="(item, index) in data.slides">
       <img :key="index" :src="item.slide.url" :alt="item.slide.alt" />
     </template>
@@ -25,6 +15,29 @@
         type: Object,
         require: true,
         default: () => ({})
+      }
+    },
+    data(){
+      return {
+        settings: {
+          arrows: this.data.arrows,
+          autoplay: this.data.autoplay,
+          autoplaySpeed: this.data.autoplay_speed,
+          dots: false,
+          fade: this.data.fade,
+          infinite: this.data.infinite,
+          pauseOnHover: this.data.pause_on_hover,
+          slidesToShow: this.data.slides_to_show,
+          speed: this.data.speed,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                dots: this.data.dots
+              }
+            }
+          ]
+        }
       }
     },
     computed: {

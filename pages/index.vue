@@ -26,10 +26,10 @@
       class="home-links-container"
     >
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-center">
           <div
             v-for="(card, index) in cards"
-            class="col-md-4 home-links"
+            class="col-6 col-md-4 home-links"
             :key="index"
           >
             <Card
