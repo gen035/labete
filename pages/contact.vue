@@ -23,7 +23,7 @@
             </div>
             <div class="contact-item">
               <a :href="`${content.facebook_messenger[0].text}`" title="messenger" data-track="" data-track-category="contact" data-track-action="click" data-track-label="messenger" target="_blank">
-                <h2>Facebook Messenger <i class="fab fa-facebook-messenger"></i></h2>
+                <h2>Messenger <i class="fab fa-facebook-messenger"></i></h2>
               </a>
             </div>
             <div class="contact-item">
