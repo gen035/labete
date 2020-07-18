@@ -5,9 +5,7 @@
       :class="`row ${isOdd}`"
     >
       <div class="col-md-6 d-flex align-items-center home-page-block-text">
-        <div>
-          <p v-html="$prismic.asHtml(block.description)" />
-        </div>
+        <div v-html="$prismic.asHtml(block.description)" />
       </div>
       <div class="col-md-6 home-page-block-img" :style="{backgroundImage: `url(${block.image.url})`}" />
     </div>

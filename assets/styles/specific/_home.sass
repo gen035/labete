@@ -29,6 +29,8 @@
     font-size: 24px
     margin: 0 0 12px 0
     text-align: center
+  &::after
+    display: none
 
 .home-links-container
   padding-bottom: 24px
@@ -42,7 +44,7 @@
   transform: translateY(-5px)
 
 .home-links
-  p
+  h2
     background-color: $dark-grey
     color: $white
     font-size: 18px
@@ -54,10 +56,8 @@
 
 .home-page-block .home-page-block-text
   background-color: $very-light-grey
-  font-family: 'PT Serif', serif
-  
-.home-page-block .home-page-block-text p
   color: $dark-grey
+  font-family: 'PT Serif', serif
   font-size: 16px
   padding: 16px
   text-align: center
@@ -65,6 +65,8 @@
   @media (min-width: 576px)
     font-size: 24px
     padding: 24px
+  h2
+    margin-bottom: 20px
   
 .home-page-block-img
   background-size: cover

@@ -7,7 +7,7 @@
             <Slider :data="slider" />
           </div>
           <div class="col-md-4 d-none d-md-block">
-            <div class="home-title">{{ content.hero_title[0].text }}</div>
+            <h1 class="home-title">{{ content.hero_title[0].text }}</h1>
           </div>
         </div>
       </div>

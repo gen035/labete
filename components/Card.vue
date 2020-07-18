@@ -12,7 +12,7 @@
       classes="d-block d-md-none d-lg-none"
       :image="card.image_mobile"
     />
-    <p>{{ card.title[0].text }}</p>
+    <h2>{{ card.title[0].text }}</h2>
   </a>
 </template>
 <script>
