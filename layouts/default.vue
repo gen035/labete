@@ -1,7 +1,5 @@
 <template>
-  <div
-    :class="$route.name"
-  >
+  <div :class="$route.name">
     <Header />
     <nuxt />
     <MobileNav />

@@ -156,5 +156,12 @@ export default {
   newsletter: {
     title: 'Subscribe to our newsletter',
     placeholder: 'Email'
+  },
+  error: {
+    title: 'An Error Occured',
+    home: 'Back home',
+    notFound: {
+      text: 'Page not found'
+    }
   }
 }

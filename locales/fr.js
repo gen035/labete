@@ -156,5 +156,12 @@ export default {
   newsletter: {
     title: 'S\'abonner à l\'infolettre',
     placeholder: 'Courriel'
+  },
+  error: {
+    title: 'Une erreur est survenue',
+    home: 'Retour à l\'acceuil',
+    notFound: {
+      text: 'Page introuvable'
+    }
   }
 }
