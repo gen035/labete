@@ -39,7 +39,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#bb9842' },
   /*
   ** Global CSS
   */
@@ -57,6 +57,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'cookie-universal-nuxt',
     ['prismic-nuxt', {
       endpoint: 'https://labete.cdn.prismic.io/api/v2',
       linkResolver: function(doc, ctx) {

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 footer-newsletter">
-            <Newsletter />
+          <Newsletter />
         </div>
         <div class="col-md-6">
           <ul class="footer-links">

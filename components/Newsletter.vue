@@ -1,7 +1,7 @@
 <template>
   <div id="newsletter">
     <div class="newsletter-title">{{ $t('newsletter.title') }}</div>
-    <form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8" target="_blank" onsubmit="submitFooterForm()">
+    <form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8" target="_blank" v-on:submit="closeModal">
       <fieldset>
         <legend></legend>
           <div class="newsletter-wrapper">
@@ -24,6 +24,13 @@
 </template>
 <script>
   export default {
+    props: {
+      isModal: {
+        type: Boolean,
+        require: false,
+        default: false
+      }
+    },
     computed: {
       locale() {
         return this.$store.state.i18n.locale;
@@ -34,6 +41,21 @@
         disabled: true,
         email: ''
       };
+    },
+    methods: {
+      closeModal() {
+        this.$store.commit('SET_NEWSLETTER', false);
+
+        if(this.isModal) {
+          this.$cookies.set(
+            'labete_newsletter',
+            true,
+            {
+              maxAge: 365 * 24 * 60 * 60
+            }
+          );
+        }
+      }
     },
     watch: {
       email: {

@@ -2,6 +2,7 @@
   <div :class="$route.name">
     <Header />
     <nuxt />
+    <NewsletterModal />
     <MobileNav />
     <Footer />
   </div>
@@ -10,13 +11,14 @@
   import Footer from './Footer';
   import Header from './Header';
   import MobileNav from './MobileNav';
-
+  import NewsletterModal from './../components/NewsletterModal';
   export default {
-    middleware: ['settings'],
+    middleware: ['settings', 'newsletter'],
     components: {
       Footer,
       Header,
-      MobileNav
+      MobileNav,
+      NewsletterModal
     }
   }
 </script>
