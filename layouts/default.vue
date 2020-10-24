@@ -2,7 +2,6 @@
   <div :class="$route.name">
     <Header />
     <nuxt />
-    <NewsletterModal />
     <MobileNav />
     <Footer />
   </div>

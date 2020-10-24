@@ -1,7 +1,7 @@
 <template>
   <div id="newsletter">
     <div class="newsletter-title">{{ $t('newsletter.title') }}</div>
-    <form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8" target="_blank" v-on:submit="closeModal">
+    <form action="https://app.cyberimpact.com/optin" method="post" accept-charset="utf-8" target="_blank">
       <fieldset>
         <legend></legend>
           <div class="newsletter-wrapper">
